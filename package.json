@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg/github.com/@yuriduque"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuriDuque/teste-packege.git"
