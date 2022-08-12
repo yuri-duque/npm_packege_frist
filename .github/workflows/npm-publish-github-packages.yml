@@ -3,14 +3,14 @@
 
 name: Node.js Package
 
-# on:
-#   release:
-#     types: [created]
-
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [created]
+
+# on:
+#   push:
+#     branches:
+#       - main
 
 jobs:
   publish-packege:
@@ -29,6 +29,6 @@ jobs:
       - name: Install dependencies 🔧
         run: npm install
       - name: Publish package on NPM 📦
-        run: npm publish
+        run: npm publish --new-version ${{ steps.release.outputs.version }} --tag ${{ steps.release.outputs.tag }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
