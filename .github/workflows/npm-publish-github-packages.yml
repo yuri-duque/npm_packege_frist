@@ -7,11 +7,6 @@ on:
   release:
     types: [created]
 
-# on:
-#   push:
-#     branches:
-#       - main
-
 jobs:
   publish-packege:
     runs-on: ubuntu-latest
@@ -21,11 +16,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Validate and extract release information
-        id: release
-        uses: manovotny/github-releases-for-automated-package-publishing-action@v1.0.0
-
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -34,6 +24,6 @@ jobs:
       - name: Install dependencies 🔧
         run: npm install
       - name: Publish package on NPM 📦
-        run: npm publish --new-version ${{ steps.release.outputs.version }}
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
