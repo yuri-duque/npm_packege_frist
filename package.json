@@ -1,6 +1,6 @@
 {
   "name": "backend-modules",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "teste yuri packege",
   "main": "index.js",
   "scripts": {
