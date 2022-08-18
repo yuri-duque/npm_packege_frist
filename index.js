@@ -1,6 +1,6 @@
 const log = require('./lib/lambdaLog');
-const test = require('backend-modules');
+// const test = require('backend-modules');
 
-test.log.info("teste");
+// test.log.info("teste");
 
 module.exports = { log }
