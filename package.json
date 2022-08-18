@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/yuriDuque/teste-packege/issues"
   },
-  "homepage": "https://github.com/yuriDuque/teste-packege#readme"
+  "homepage": "https://github.com/yuriDuque/teste-packege#readme",
+  "dependencies": {
+    "lambda-log": "^3.1.0"
+  }
 }

@@ -1,5 +1,3 @@
-const sayHello = function(name){
-    console.log(`Hello ${name}`);
-}
+const log = require('./lib/lambdaLog');
 
-module.exports = { sayHello }
+module.exports = { log }
