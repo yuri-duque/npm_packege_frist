@@ -21,5 +21,8 @@
   "homepage": "https://github.com/yuriDuque/teste-packege#readme",
   "dependencies": {
     "lambda-log": "^3.1.0"
+  },
+  "devDependencies": {
+    "backend-modules": "^2.0.1"
   }
 }
